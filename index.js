@@ -39,13 +39,11 @@ app.post("/search", (req, res) => {
 
 app.get("/getCards", (req, res) => {
   let mysql = "SELECT * FROM lancamentos";
-  //let mysql = 'SELECT * FROM lancamentos WHERE 1 ORDER BY cod ASC LIMIT 20';
   db.query(mysql, (err, result) => {
     if (err) {
       console.log(err);
     } else {
       res.send(result);
-      //console.log(res.send(result))
     }
   });
 });
@@ -57,7 +55,6 @@ app.get("/getPlantaGenerica", (req, res) => {
       console.log(err);
     } else {
       res.send(result);
-      //console.log(res.send(result))
     }
   });
 });
@@ -69,7 +66,6 @@ app.get("/getColetaLixo", (req, res) => {
       console.log(err);
     } else {
       res.send(result);
-      //console.log(res.send(result))
     }
   });
 });
