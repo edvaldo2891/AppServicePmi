@@ -97,7 +97,7 @@ app.delete("/delete/:id", (req, res) => {
   });
 });
 
-app.listen(8443, () => {
-  console.log("Servidor inicado com sucesso!!! Rodando na porta 8443");
+app.listen(443, () => {
+  console.log("Servidor inicado com sucesso!!! Rodando na porta 443");
 });
 
